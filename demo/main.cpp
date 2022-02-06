@@ -1,5 +1,7 @@
-#include <example.hpp>
+#include "Hasher.hpp"
 
-int main() {
-  example();
+int main(int argc, char* argv[]) {
+  Hasher SHA256;
+  SHA256.get_hash(argc, argv);
+  return 0;
 }
